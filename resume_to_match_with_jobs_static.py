@@ -14,7 +14,7 @@ uploaded_file = st.file_uploader("Upload your resume:", type=["pdf", "docx"])
 
 # Sample resume data dictionary
 example_data = {
-    "Ava_Thompson_Resume.pdf": {
+    "Ava_Thompson_Resume": {
         "category": "Human Resources (HR)",
         "content": """Ava Thompson\nPhone: (374) 136-7622\nEmail: ava.thompson@example.com\n\nProfessional Summary\nHR professional with 6+ years of experience in recruitment, employee relations, and compliance management.\n\nEducation\nBachelor of Human Resources, NYU, 2015\n\nExperience\nHR Generalist, PeopleFirst Solutions — 2018 to Present\n- Managed employee onboarding and exit processes.\n- Ensured HRIS data accuracy using Workday.\n- Led training sessions on company policies and diversity.\n\nHR Assistant, BrightHire — 2015 to 2018\n- Supported recruitment operations and scheduled interviews.\n- Processed payroll and maintained compliance records.\n\nSkills\nRecruitment, Onboarding, HR Compliance, Payroll, Workday\n""",
         "features": {
@@ -34,7 +34,7 @@ example_data = {
             {"Job Title": "Payroll & Benefits Analyst", "Company": "FinWise", "Category": "Human Resources (HR)", "Match Score": 0.76, "Explanation": "Payroll systems and employee relations background fit role needs."}
         ]
     },
-    "Liam_Scott_Resume.pdf": {
+    "Liam_Scott_Resume": {
         "category": "Information Technology (IT)",
         "content": """Liam Scott\nPhone: (202) 555-8123\nEmail: liam.scott@devtech.com\n\nProfessional Summary\nFull-stack developer with 5+ years building scalable web apps with Django, React, and PostgreSQL.\n\nEducation\nBachelor of Computer Science, MIT, 2016\n\nExperience\nSoftware Engineer, NovaSoft — 2019 to Present\n- Built REST APIs with Django and Flask.\n- Implemented CI/CD using GitHub Actions and Docker.\n\nJunior Developer, CodePro — 2016 to 2019\n- Developed UI components in React and Redux.\n- Worked with PostgreSQL and MongoDB for backend services.\n\nSkills\nPython, Django, React, PostgreSQL, Git, Docker\n""",
         "features": {
@@ -54,7 +54,7 @@ example_data = {
             {"Job Title": "Platform Engineer", "Company": "TechWare", "Category": "Information Technology (IT)", "Match Score": 0.78, "Explanation": "Strong full-stack capabilities with scalable architectures."}
         ]
     },
-    "Sophia_Moore_Resume.pdf": {
+    "Sophia_Moore_Resume": {
         "category": "Healthcare Professional",
         "content": """Sophia Moore\nPhone: (312) 404-2290\nEmail: sophia.moore@medline.org\n\nProfessional Summary\nRegistered Nurse with 8+ years of experience in emergency care and patient assessment in high-volume hospitals.\n\nEducation\nBachelor of Nursing, University of Illinois, 2014\n\nExperience\nER Nurse, City Hospital — 2016 to Present\n- Provided critical care in fast-paced ER setting.\n- Coordinated with physicians for trauma cases.\n\nNursing Assistant, Mercy Health — 2014 to 2016\n- Monitored vital signs and administered medications.\n- Assisted in daily care routines and charting.\n\nSkills\nPatient Care, Emergency Medicine, EHR Systems, IV Administration\n""",
         "features": {
