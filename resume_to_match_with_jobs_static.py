@@ -80,12 +80,12 @@ example_data = {
 # Detect Uploaded Resume
 # ----------------------------
 if uploaded_file is not None:
-    resume_key = uploaded_file.name
+    resume_key = os.path.splitext(uploaded_file.name)[0]  # remove .pdf or .docx
 
     if resume_key in example_data:
         resume = example_data[resume_key]
 
-        st.success(f"✅ You uploaded: `{resume_key}`")
+        st.success(f"✅ You uploaded: `{uploaded_file.name}`")
 
         # 2. Resume Content
         st.header("📄 Resume Preview")
@@ -113,4 +113,4 @@ if uploaded_file is not None:
     else:
         st.warning("⚠️ This resume is not recognized in the static demo.")
 else:
-    st.info("📁 Please upload one of the sample resumes (PDF): Ava_Thompson_Resume.pdf, Liam_Scott_Resume.pdf, Sophia_Moore_Resume.pdf")
+    st.info("📁 Please upload one of the sample resumes (PDF or DOCX): Ava_Thompson_Resume, Liam_Scott_Resume, Sophia_Moore_Resume")
